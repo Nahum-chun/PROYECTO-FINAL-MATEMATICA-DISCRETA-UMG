@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto final colaborativo de Matemática Discreta - Universidad Mariano Gálvez">
+  <title>Matemática Discreta | Proyecto Final UMG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">∑</span><span><strong>MATEMÁTICA DISCRETA</strong><small>PROYECTO FINAL · UMG</small></span></a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">☰</button>
+      <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#modulos">Módulos</a><a href="#laboratorio">Laboratorio</a><a href="#equipo">Equipo</a><a href="#documentacion">Documentación</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div><p class="eyebrow">UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA</p><h1>La lógica detrás de <em>cada solución.</em></h1><p class="hero-description">Un proyecto colaborativo que conecta los principios de conteo, la teoría de conjuntos, los algoritmos recursivos y los grafos con soluciones computacionales.</p><div class="hero-actions"><a class="btn btn-primary" href="#modulos">Explorar los módulos <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#laboratorio">Probar laboratorio</a></div><div class="hero-stats"><span><strong>04</strong> módulos</span><span><strong>04</strong> integrantes</span><span><strong>01</strong> proyecto</span></div></div>
+        <div class="hero-art" aria-hidden="true"><div class="art-grid"></div><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><div class="art-ring ring-three"></div><div class="art-center">A ∩ B</div><span class="art-label label-a">{1, 2, 3}</span><span class="art-label label-b">n!</span><span class="art-label label-c">G = (V, E)</span></div>
+      </div>
+    </section>
+    <section class="intro section"><div class="container intro-grid"><div><p class="eyebrow">SOBRE EL PROYECTO</p><h2>De la teoría a la <span>implementación.</span></h2></div><p>Este espacio reúne los cuatro ejes del proyecto final de Matemática Discreta. Cada integrante podrá incorporar sus ejercicios, demostraciones, algoritmos y evidencias, manteniendo una presentación uniforme y una estructura compartida.</p></div></section>
+    <section id="modulos" class="section modules-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">CONTENIDOS ACADÉMICOS</p><h2>Cuatro áreas, un mismo propósito.</h2></div><p>Los módulos están preparados para recibir el trabajo de cada integrante.</p></div><div class="module-grid">
+      <article class="module-card"><span class="module-index">01 / CONTEO</span><div class="module-icon">n!</div><h3>Principios de Conteo y Combinatoria</h3><p>Reglas de suma y producto, permutaciones y combinaciones para resolver problemas de conteo.</p><span class="module-status">Espacio preparado</span><a href="#documentacion" class="module-link">Ver instrucciones <span>↗</span></a></article>
+      <article class="module-card featured"><span class="module-index">02 / CONJUNTOS</span><div class="module-icon">∪ ∩</div><h3>Operaciones con Conjuntos y Relaciones</h3><p>Unión, intersección, diferencia, complemento, producto cartesiano y diagramas de Venn.</p><span class="module-status">Demostración web disponible</span><a href="#laboratorio" class="module-link">Probar operaciones <span>↗</span></a></article>
+      <article class="module-card"><span class="module-index">03 / ALGORITMOS</span><div class="module-icon">ƒ(x)</div><h3>Recursividad, MCD y Algoritmo de Euclides</h3><p>Funciones recursivas y cálculo del máximo común divisor mediante el algoritmo de Euclides.</p><span class="module-status">Espacio preparado</span><a href="#documentacion" class="module-link">Ver instrucciones <span>↗</span></a></article>
+      <article class="module-card"><span class="module-index">04 / GRAFOS</span><div class="module-icon">⬡</div><h3>Introducción a Grafos y Lógica del Código</h3><p>Representación de grafos, estructuras de control y organización de algoritmos documentados.</p><span class="module-status">Espacio preparado</span><a href="#documentacion" class="module-link">Ver instrucciones <span>↗</span></a></article>
+    </div></div></section>
+    <section id="laboratorio" class="section lab-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">LABORATORIO INTERACTIVO</p><h2>Explora las operaciones con conjuntos.</h2></div><p>Demostración en JavaScript. El código Python requerido se entregará por separado.</p></div><div class="lab-card"><div class="lab-fields"><label for="setA">Conjunto A <small>(números separados por comas)</small><input id="setA" value="1, 2, 3, 4, 5" autocomplete="off"></label><label for="setB">Conjunto B <small>(números separados por comas)</small><input id="setB" value="4, 5, 6, 7, 8" autocomplete="off"></label><label for="setU">Universo U <small>(para el complemento)</small><input id="setU" value="1, 2, 3, 4, 5, 6, 7, 8, 9, 10" autocomplete="off"></label></div><div class="lab-controls"><label for="operation">Operación</label><select id="operation"><option value="union">Unión A ∪ B</option><option value="intersection">Intersección A ∩ B</option><option value="difference">Diferencia A − B</option><option value="complement">Complemento Aᶜ</option><option value="cartesian">Producto cartesiano A × B</option></select><button class="btn btn-primary" id="calculateBtn" type="button">Calcular resultado</button></div><div class="lab-result" role="status" aria-live="polite"><span>RESULTADO</span><p id="resultText">Selecciona una operación y presiona «Calcular resultado».</p><small id="resultCount"></small></div><p class="lab-note">Los elementos se tratan como números. El complemento requiere que A sea subconjunto de U. El producto cartesiano conserva el orden de los pares.</p></div></div></section>
+    <section id="equipo" class="section team-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">TRABAJO COLABORATIVO</p><h2>Un equipo, cuatro aportaciones.</h2></div><p>Reemplazar los nombres y completar las responsabilidades al definir la distribución final.</p></div><div class="team-grid"><div class="team-card"><span>01</span><h3>Integrante 1</h3><p>Conteo y Combinatoria</p></div><div class="team-card"><span>02</span><h3>Integrante 2</h3><p>Conjuntos y Relaciones</p></div><div class="team-card"><span>03</span><h3>Integrante 3</h3><p>Recursividad y MCD</p></div><div class="team-card"><span>04</span><h3>Integrante 4</h3><p>Grafos y Lógica</p></div></div></div></section>
+    <section id="documentacion" class="section docs-section"><div class="container docs-grid"><div><p class="eyebrow">ENTREGABLES DEL PROYECTO</p><h2>Documentación y código fuente.</h2><p>La web funciona como vitrina colaborativa del proyecto. El informe PDF y los archivos Python o C++ siguen siendo entregables independientes.</p></div><div class="docs-items"><div><span>01</span><div><h3>Informe PDF</h3><p>Planteamiento de problemas, demostraciones matemáticas, inducción, manual técnico y pseudocódigo.</p></div></div><div><span>02</span><div><h3>Código fuente ZIP</h3><p>Funciones separadas por tema y entradas de prueba documentadas para validar los resultados.</p></div></div><div><span>03</span><div><h3>Colaboración en GitHub</h3><p>Cada integrante puede crear su rama, agregar su contenido y proponer cambios mediante pull requests.</p></div></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span><strong>MATEMÁTICA DISCRETA</strong><br>Proyecto Final · UMG</span><span>Desarrollado colaborativamente con fines académicos.</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+</body>
+</html>
